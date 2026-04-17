@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cynosure - Employee Self Service Dashboard</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <div class="sidebar-logo">
+    <div class="sidebar-logo-inner">
+      <span class="sidebar-logo-brand">CYNO</span>
+      <span class="sidebar-logo-sub">SURE</span>
+    </div>
+  </div>
+  <div class="sidebar-nav">
+    <a href="#" title="Grid"><i class="fa-solid fa-grip"></i></a>
+    <a href="#" class="active" title="Dashboard"><i class="fa-solid fa-house"></i></a>
+    <a href="#" title="Analytics"><i class="fa-solid fa-chart-line"></i></a>
+    <a href="#" title="Users"><i class="fa-solid fa-user"></i></a>
+    <a href="#" title="Calendar"><i class="fa-solid fa-calendar"></i></a>
+    <a href="#" title="Messages"><i class="fa-solid fa-comment-dots"></i></a>
+    <a href="#" title="Documents"><i class="fa-solid fa-file-lines"></i></a>
+    <a href="#" title="Bell"><i class="fa-solid fa-bell"></i></a>
+    <a href="#" title="Help"><i class="fa-solid fa-circle-question"></i></a>
+  </div>
+  <div class="sidebar-bottom">
+    <a href="#" title="Power"><i class="fa-solid fa-power-off"></i></a>
+  </div>
+</div>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="topbar-brand">Employee Self Service</div>
+  <div class="topbar-right">
+    <span class="topbar-welcome">Welcome Employee</span>
+    <span class="topbar-link-icon"><i class="fa-solid fa-link"></i></span>
+    <div class="topbar-avatar"><i class="fa-solid fa-user"></i></div>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main-content">
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <span class="breadcrumb-bar">Dashboard</span>
+    <div class="year-selector">
+      <i class="fa-regular fa-calendar" style="font-size:11px;color:#2563eb;"></i>
+      2025-2026
+      <i class="fa-solid fa-chevron-down" style="font-size:10px;color:#6b7280;"></i>
+    </div>
+  </div>
+
+  <!-- GREETING -->
+  <div class="greeting-row">
+    <div class="greeting-text">Hello kamlesh,</div>
+    <button class="btn-create">Create <i class="fa-solid fa-plus"></i></button>
+  </div>
+
+  <!-- STAT CARDS ROW -->
+  <div class="row g-3 mb-3">
+    <div class="col-6 col-md-3">
+      <div class="stat-card">
+        <div class="stat-card-icon green"><i class="fa-regular fa-clock"></i></div>
+        <div class="stat-card-label">Todays Meeting</div>
+        <div class="stat-card-value green">12</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="stat-card">
+        <div class="stat-card-icon blue"><i class="fa-regular fa-calendar-check"></i></div>
+        <div class="stat-card-label">Todays Task</div>
+        <div class="stat-card-value blue">12</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="stat-card">
+        <div class="stat-card-icon orange"><i class="fa-regular fa-hourglass-half"></i></div>
+        <div class="stat-card-label">Total Pending task</div>
+        <div class="stat-card-value orange">12</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="stat-card">
+        <div class="stat-card-icon red"><i class="fa-regular fa-calendar-minus"></i></div>
+        <div class="stat-card-label">Overdue Tasks</div>
+        <div class="stat-card-value red">12</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN GRID -->
+  <div class="row g-3">
+
+    <!-- LEFT COLUMN: To Do + Ongoing Projects -->
+    <div class="col-12 col-lg-4">
+      <!-- To Do List -->
+      <div class="section-card mb-3">
+        <div class="section-header">
+          <div class="section-title">To Do List</div>
+          <div class="section-actions">
+            <button class="btn-filter">Today <i class="fa-solid fa-chevron-down" style="font-size:9px;"></i></button>
+            <button class="btn-add-circle"><i class="fa-solid fa-plus" style="font-size:12px;"></i></button>
+          </div>
+        </div>
+        <div class="section-scroll">
+          <div class="todo-item">
+            <span class="todo-star active"><i class="fa-solid fa-star"></i></span>
+            <div class="todo-info">
+              <div class="todo-name">Design Task Management ...</div>
+              <div class="todo-sub">Task Management &bull; By : Deepa Ma'am</div>
+            </div>
+            <span class="badge-freq badge-daily">Daily</span>
+          </div>
+          <div class="todo-item">
+            <span class="todo-star"><i class="fa-regular fa-star"></i></span>
+            <div class="todo-info">
+              <div class="todo-name">Design Wire frame</div>
+              <div class="todo-sub">Task Management &bull; By : Gourav sir</div>
+            </div>
+            <span class="badge-freq badge-weekly">Weekly</span>
+          </div>
+          <div class="todo-item">
+            <span class="todo-star"><i class="fa-regular fa-star"></i></span>
+            <div class="todo-info">
+              <div class="todo-name">Scope Document</div>
+              <div class="todo-sub">Task Management &bull; By : Gourav sir</div>
+            </div>
+            <span class="badge-freq badge-monthly">Monthly</span>
+          </div>
+          <div class="todo-item">
+            <span class="todo-star"><i class="fa-regular fa-star"></i></span>
+            <div class="todo-info">
+              <div class="todo-name">Document Creation</div>
+              <div class="todo-sub">Task Management &bull; By : Gourav sir</div>
+            </div>
+            <span class="badge-freq badge-yearly">Yearly</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ongoing Projects -->
+      <div class="section-card">
+        <div class="section-header">
+          <div class="section-title">Ongoing Projects</div>
+        </div>
+        <div class="projects-scroll">
+          <div class="project-card">
+            <div class="project-title">Update Employee Contact ..</div>
+            <div class="project-desc">Ensure all employee contact details are up-to-date in the ESS portal. This includes phone numbers...</div>
+            <div class="project-time"><i class="fa-regular fa-clock"></i> 09:30 PM - 10:00 AM</div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+              <span style="font-size:10px;color:#9ca3af;">Progress</span>
+              <span style="font-size:10px;color:#374151;font-weight:600;">62%</span>
+            </div>
+            <div class="project-progress-bar"><div class="project-progress-fill" style="width:62%;"></div></div>
+            <div class="project-meta">
+              <div class="project-avatars">
+                <div class="av av1">A</div>
+                <div class="av av2">B</div>
+                <div class="av av3">C</div>
+              </div>
+              <span><i class="fa-regular fa-clock"></i> 12 tasks &nbsp; <i class="fa-solid fa-bolt"></i> 36 Activities</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-title">Approve Leave Requests</div>
+            <div class="project-desc">Review and approve pending leave applications submitted via the ESS portal. Ensure leave...</div>
+            <div class="project-time"><i class="fa-regular fa-clock"></i> 09:30 PM - 10:00 AM</div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+              <span style="font-size:10px;color:#9ca3af;">Complete</span>
+              <span style="font-size:10px;color:#374151;font-weight:600;">100%</span>
+            </div>
+            <div class="project-progress-bar"><div class="project-progress-fill complete" style="width:100%;"></div></div>
+            <div class="project-meta">
+              <div class="project-avatars">
+                <div class="av av1">A</div>
+                <div class="av av2">B</div>
+                <div class="av av3">C</div>
+              </div>
+              <span><i class="fa-regular fa-clock"></i> 12 tasks &nbsp; <i class="fa-solid fa-bolt"></i> 86 Activities</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-title">Generate Monthly Attendance Report</div>
+            <div class="project-desc">Compile and distribute the monthly attendance report to relevant stakeholders...</div>
+            <div class="project-time"><i class="fa-regular fa-clock"></i> 09:30 PM - 10:00 AM</div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+              <span style="font-size:10px;color:#9ca3af;">Progress</span>
+              <span style="font-size:10px;color:#374151;font-weight:600;">45%</span>
+            </div>
+            <div class="project-progress-bar"><div class="project-progress-fill" style="width:45%;"></div></div>
+            <div class="project-meta">
+              <div class="project-avatars">
+                <div class="av av1">A</div>
+                <div class="av av2">B</div>
+              </div>
+              <span><i class="fa-regular fa-clock"></i> 8 tasks &nbsp; <i class="fa-solid fa-bolt"></i> 22 Activities</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MIDDLE COLUMN: Meeting + Tasks in Review -->
+    <div class="col-12 col-lg-4">
+      <!-- Meeting -->
+      <div class="section-card mb-3">
+        <div class="section-header">
+          <div class="section-title">Meeting</div>
+          <div class="section-actions">
+            <button class="btn-filter">Today <i class="fa-solid fa-chevron-down" style="font-size:9px;"></i></button>
+            <button class="btn-add-circle"><i class="fa-solid fa-plus" style="font-size:12px;"></i></button>
+          </div>
+        </div>
+        <div class="section-scroll">
+          <div class="meeting-item">
+            <div style="flex:1;">
+              <div class="meeting-name">Team Stand-up Meeting</div>
+              <div class="meeting-time"><i class="fa-regular fa-clock"></i> 09:15 AM - 09:45 AM</div>
+            </div>
+            <div class="meeting-duration"><i class="fa-regular fa-clock"></i> 30 min</div>
+          </div>
+          <div class="meeting-item">
+            <div style="flex:1;">
+              <div class="meeting-name">Discussion with Client</div>
+              <div class="meeting-time"><i class="fa-regular fa-clock"></i> 10:30 AM - 11:15 AM</div>
+            </div>
+            <div class="meeting-duration"><i class="fa-regular fa-clock"></i> 45 min</div>
+          </div>
+          <div class="meeting-item">
+            <div style="flex:1;">
+              <div class="meeting-name">Interview Front end Developer</div>
+              <div class="meeting-time"><i class="fa-regular fa-clock"></i> 11:30 AM - 01:00 PM</div>
+            </div>
+            <div class="meeting-duration"><i class="fa-regular fa-clock"></i> 90 min</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tasks in Review -->
+      <div class="section-card">
+        <div class="section-header">
+          <div class="section-title">Tasks in Review</div>
+        </div>
+        <div class="review-scroll">
+          <div class="review-item">
+            <div style="flex:1;min-width:0;">
+              <div class="review-name">Design Task Management ...</div>
+              <div class="review-meta">Submitted: Yesterday &bull; To: Deepa Ma'am</div>
+            </div>
+            <span class="badge-status badge-submitted">Submitted</span>
+          </div>
+          <div class="review-item">
+            <div style="flex:1;min-width:0;">
+              <div class="review-name">Design Wire frame</div>
+              <div class="review-meta">Submitted: Yesterday &bull; To: Gourav sir</div>
+            </div>
+            <span class="badge-status badge-submitted">Submitted</span>
+          </div>
+          <div class="review-item">
+            <div style="flex:1;min-width:0;">
+              <div class="review-name">Scope Document</div>
+              <div class="review-meta">Submitted: Yesterday &bull; To: Gourav sir</div>
+            </div>
+            <span class="badge-status badge-submitted">Submitted</span>
+          </div>
+          <div class="review-item">
+            <div style="flex:1;min-width:0;">
+              <div class="review-name">Document Creation</div>
+              <div class="review-meta">Submitted: Yesterday &bull; To: Gourav sir</div>
+            </div>
+            <span class="badge-status badge-submitted">Submitted</span>
+          </div>
+          <div class="review-item">
+            <div style="flex:1;min-width:0;">
+              <div class="review-name">User Experience Research</div>
+              <div class="review-meta">Submitted: Today &bull; To: Deepa Ma'am</div>
+            </div>
+            <span class="badge-status badge-inreview">In Review</span>
+          </div>
+          <div class="review-item">
+            <div style="flex:1;min-width:0;">
+              <div class="review-name">Prototype Development</div>
+              <div class="review-meta">Submitted: Today &bull; To: Aditya sir</div>
+            </div>
+            <span class="badge-status badge-inreview">In Review</span>
+          </div>
+          <div class="review-item">
+            <div style="flex:1;min-width:0;">
+              <div class="review-name">Usability Testing Report</div>
+              <div class="review-meta">Submitted: Today &bull; To: Deepa Ma'am</div>
+            </div>
+            <span class="badge-status badge-inreview">In Review</span>
+          </div>
+          <div class="review-item">
+            <div style="flex:1;min-width:0;">
+              <div class="review-name">Design System Documentation</div>
+              <div class="review-meta">Submitted: Today &bull; To: Gourav sir</div>
+            </div>
+            <span class="badge-status badge-pending">Pending</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN: Upcoming Events + Feed -->
+    <div class="col-12 col-lg-4">
+      <!-- Upcoming Events -->
+      <div class="event-card mb-3">
+        <div class="events-header">
+          <div class="events-title">Upcoming Events</div>
+          <div class="d-flex gap-1">
+            <button class="event-nav-btn"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="event-nav-btn active"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+        <div class="event-item">
+          <div class="event-date-box">
+            <div class="event-date-num">03</div>
+            <div class="event-date-mon">July</div>
+          </div>
+          <div style="flex:1;">
+            <div class="event-title">Project Kickoff</div>
+            <div class="event-desc">The event details will come here in this line...</div>
+            <div class="event-time"><i class="fa-regular fa-clock"></i> 12:00 PM</div>
+          </div>
+          <div class="event-end-date">
+            <div class="event-date-num">05</div>
+            <div class="event-date-mon">July</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feed -->
+      <div class="feed-card">
+        <div class="feed-header">
+          <div class="feed-title">Feed <span class="feed-badge">2</span></div>
+        </div>
+        <div style="display:flex;align-items:center;padding:8px 16px 0;border-bottom:1px solid #f3f4f6;gap:0;">
+          <div class="feed-tab active">View All</div>
+          <div class="feed-tab">Unread (2)</div>
+          <div class="feed-mark-read">Mark all as read</div>
+        </div>
+        <div class="feed-scroll">
+          <div class="feed-date-sep">Thursday, 26 Jun</div>
+          <div class="feed-item">
+            <div class="feed-item-title">New Task Assigned <span class="badge-unread">Unread</span></div>
+            <div class="feed-item-body">You have been assigned a new task by Ramesh pandey (Team Lead ) in the...</div>
+            <div class="feed-item-meta">By : Ramesh Pandey | 12:32</div>
+          </div>
+          <div class="feed-item">
+            <div class="feed-item-title">New Task Assigned <span class="badge-unread">Unread</span></div>
+            <div class="feed-item-body">You have been assigned a new task by Ramesh pandey (Team Lead ) in the...</div>
+            <div class="feed-item-meta">By : Ramesh Pandey | 12:32</div>
+          </div>
+          <div class="feed-item">
+            <div class="feed-item-title">Travel management reached a Milestone</div>
+            <div class="feed-img-item" style="margin-top:4px;">
+              <div style="flex:1;">
+                <div class="feed-item-body">Agenda of the meeting will be come here and also share your thoughts on th...</div>
+                <div class="feed-item-meta">System generated | 12:32</div>
+              </div>
+              <div class="feed-img-placeholder">🎊</div>
+            </div>
+          </div>
+          <div class="feed-date-sep">Wednesday, 25 Jun</div>
+          <div class="feed-item">
+            <div class="feed-item-title">Task Approved</div>
+            <div class="feed-item-body">Your AppXchange task has been approved.</div>
+            <div class="feed-item-meta">By : Ramnee Ma'am | 14:27</div>
+          </div>
+          <div class="feed-item">
+            <div class="feed-item-title">You were added in a Project</div>
+            <div class="feed-item-body">You have been added in Task management Project.</div>
+            <div class="feed-item-meta">By : Gourav sir | 14:27</div>
+          </div>
+          <div class="feed-date-sep">Wednesday, 25 Jun</div>
+          <div class="feed-item">
+            <div class="feed-item-title">Task Approved</div>
+            <div class="feed-item-body">Your AppXchange task has been approved.</div>
+            <div class="feed-item-meta">By : Ramnee Ma'am | 18:17</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end row -->
+</div><!-- end main-content -->
+<script src="script.js"></script>
+</body>
+</html>
